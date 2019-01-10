@@ -1,4 +1,4 @@
-package com.gwg;
+package com.java.bio;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,30 +9,21 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * ´«Í³µÄSocket·şÎñ¶Ë
+ * ä¼ ç»ŸsocketæœåŠ¡ç«¯â€”â€”å¤šçº¿ç¨‹ç‰ˆ
  * @author gaoweigang
  *
  */
-public class OioServer {
+public class OioServerOnMultiThread {
 	
 	public static void main(String[] args) throws IOException {
 		
 		ExecutorService service = Executors.newCachedThreadPool();
-		//´´½¨socket·şÎñ£¬¼àÌı10101¶Ë¿Ú
+		//åˆ›å»ºsocketæœåŠ¡ï¼Œç›‘å¬10101ç«¯å£
 		ServerSocket server = new ServerSocket(10101);
-		System.out.println("·şÎñÆ÷Æô¶¯£¡");
-	    Socket[] socketArr = new Socket[2];
-		final Socket socket = server.accept();
-		for(int i = 0; i< socketArr.length; i++){
-			//»ñÈ¡Ò»¸öÌ×½Ó×Ö(×èÈû)
-			socketArr[i] = socket;
-			System.out.println("À´ÁËÒ»¸öĞÂµÄ ¿Í»§¶Ë£¡, socket:"+socket);
-			if(i == 1){
-				System.out.println("Êı×é´óĞ¡Îª2......");
-				if(socketArr[0] == socketArr[1]){//Ã¿´ÎÀ´Ò»¸öĞÂµÄ»Ø»°¶¼»á ÖØĞÂ´´½¨Ò»¸öSocket
-					System.out.println("ÅĞ¶ÏÊÇ²»ÊÇÃ¿À´Ò»¸öĞÂµÄ»Ø»°¶¼»á´´½¨Ò»¸öĞÂµÄSocket");
-				}
-			}
+		System.out.println("æœåŠ¡å¯åŠ¨ï¼");
+	    while(true){
+			final Socket socket = server.accept();//é˜»å¡ï¼Œç­‰å¾…ä¸€ä¸ªæ–°çš„è¿æ¥åˆ°æ¥
+			System.out.println("æ¥äº†ä¸€ä¸ªæ–°çš„å®¢æˆ·ç«¯ï¼");
 			service.submit(new Runnable() {
 				public void run() {
 					handler(socket);
@@ -49,7 +40,7 @@ public class OioServer {
 			InputStream inputStream = socket.getInputStream();
 			
 			while(true){
-				//¶ÁÈ¡Êı¾İ(×èÈû)
+				//è¯»å–æ•°æ®(é˜»å¡)
 				int read = inputStream.read(bytes);
 				if(read != -1){
 					System.out.println(new String(bytes));
@@ -62,7 +53,7 @@ public class OioServer {
 			e.printStackTrace();
 		} finally{
 			try {
-				System.out.println("socket¹Ø±Õ");
+				System.out.println("socketå…³é—­");
 				socket.close();
 			} catch (IOException e) {
 				e.printStackTrace();
