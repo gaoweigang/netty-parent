@@ -1,0 +1,11 @@
+传统的IO特点
+阻塞点
+Server.accept()
+inputStream.read(bytes);
+单线程情况下只能有一个客户端
+
+多线程情况下可以有多个客户端连接，非常消耗性能，因为一个线程只能为一个Socket服务，
+
+
+NIO的特点
+一个线程可以为多个Socket服务。
