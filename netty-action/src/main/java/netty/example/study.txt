@@ -1,0 +1,18 @@
+1.一个EventLoopGroup与一个或多个EventLoop关联，而EventLoop与Channel是一对一的关系，Netty中的EventLoopGroup包含一个或多个EventLoop,而EventLoop就是
+一个Channel执行实际工作的线程。EventLoop绑定一个单一的线程，在其生命周期内不会改变。
+
+因为Netty使用相同的API来实现传输，它并不关心你使用什么来实现。Netty通过操作Channel接口和ChannelPipeline,ChannelHandler来实现传输。
+
+2.当注册一个Channel后，Netty将这个Channel绑定到一个EventLoop,在Channel的生命周期内总是被绑定到一个EventLoop。在Netty IO操作中，你的程序不需要同步
+，因为一个指定Channel的所有IO始终由同一个线程来执行。
+
+3.什么是Bootstrap?为什么使用它？
+“引导”是Netty中配置程序的过程，当你需要连接客户端或服务器绑定指定端口时需要使用bootstrap。如前面所述，“引导”有两种类型，一种用于客户端的Bootstrap
+(也适用于DatagramChannel),一种是用于服务端的ServerBootstrap。不管程序使用哪种协议，无论创建客户端还是服务器端都需要使用“引导”。
+两种bootstrap之间有一些相似之处，其实它们之间有很多相似之处，也有一些不同。Bootstrap
+
+4.每个ChannelHandler被添加到ChannelPipeline后，都会创建一个ChannelHandlerContext并与之创建的ChannelHandler关联绑定。ChannelHandlerContext
+允许ChannelHandler与其他的ChannelHandler实现交互，这个相同ChannelPipeline的一部分。ChannelHandlerContext不会改变添加到其中的ChannlHandler.
+因此它是安全的。
+
+
