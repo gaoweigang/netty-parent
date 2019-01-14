@@ -13,7 +13,7 @@
     <bytecodeTargetLevel>
       <module name="netty-action" target="1.5" />
       <module name="netty-parent" target="1.5" />
-      <module name="netty-study" target="1.8" />
+      <module name="netty-study" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
