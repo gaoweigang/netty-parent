@@ -8,5 +8,9 @@
   <modules>
   	<module>netty-study</module>
     <module>netty-action</module>
+    <module>netty-userguide</module>
+      <module>netty-designmode</module>
   </modules>
+
+
 </project>

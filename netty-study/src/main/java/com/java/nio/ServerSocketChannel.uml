@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>java.nio.channels.ServerSocketChannel</OriginalElement>
+  <nodes>
+    <node x="0.0" y="243.0">java.nio.channels.InterruptibleChannel</node>
+    <node x="114.10000000000001" y="405.0">java.nio.channels.SelectableChannel</node>
+    <node x="157.25" y="81.0">java.io.Closeable</node>
+    <node x="260.25" y="243.0">java.nio.channels.NetworkChannel</node>
+    <node x="23.25" y="324.0">java.nio.channels.spi.AbstractInterruptibleChannel</node>
+    <node x="143.75" y="0.0">java.lang.AutoCloseable</node>
+    <node x="90.10000000000002" y="486.0">java.nio.channels.spi.AbstractSelectableChannel</node>
+    <node x="162.75" y="162.0">java.nio.channels.Channel</node>
+    <node x="166.72500000000002" y="567.0">java.nio.channels.ServerSocketChannel</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="java.nio.channels.SelectableChannel" target="java.nio.channels.spi.AbstractInterruptibleChannel">
+      <point x="-38.75" y="-15.5" />
+      <point x="152.85000000000002" y="380.0" />
+      <point x="131.25" y="380.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="java.nio.channels.NetworkChannel" target="java.nio.channels.Channel">
+      <point x="0.0" y="-15.5" />
+      <point x="333.25" y="213.0" />
+      <point x="246.75" y="213.0" />
+      <point x="36.0" y="15.5" />
+    </edge>
+    <edge source="java.nio.channels.spi.AbstractInterruptibleChannel" target="java.nio.channels.InterruptibleChannel">
+      <point x="-54.0" y="-15.5" />
+      <point x="77.25" y="299.0" />
+      <point x="84.0" y="299.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="java.nio.channels.ServerSocketChannel" target="java.nio.channels.spi.AbstractSelectableChannel">
+      <point x="-43.0" y="-15.5" />
+      <point x="209.72500000000002" y="542.0" />
+      <point x="191.60000000000002" y="542.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="java.nio.channels.spi.AbstractInterruptibleChannel" target="java.nio.channels.Channel">
+      <point x="54.0" y="-15.5" />
+      <point x="185.25" y="299.0" />
+      <point x="178.5" y="299.0" />
+      <point x="178.5" y="223.0" />
+      <point x="198.75" y="223.0" />
+      <point x="-12.0" y="15.5" />
+    </edge>
+    <edge source="java.nio.channels.ServerSocketChannel" target="java.nio.channels.NetworkChannel">
+      <point x="43.0" y="-15.5" />
+      <point x="295.725" y="542.0" />
+      <point x="333.25" y="542.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="java.io.Closeable" target="java.lang.AutoCloseable">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="java.nio.channels.spi.AbstractSelectableChannel" target="java.nio.channels.SelectableChannel">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="java.nio.channels.InterruptibleChannel" target="java.nio.channels.Channel">
+      <point x="0.0" y="-15.5" />
+      <point x="84.0" y="213.0" />
+      <point x="174.75" y="213.0" />
+      <point x="-36.0" y="15.5" />
+    </edge>
+    <edge source="java.nio.channels.Channel" target="java.io.Closeable">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="java.nio.channels.SelectableChannel" target="java.nio.channels.Channel">
+      <point x="38.75" y="-15.5" />
+      <point x="230.35000000000002" y="380.0" />
+      <point x="249.75" y="380.0" />
+      <point x="249.75" y="223.0" />
+      <point x="222.75" y="223.0" />
+      <point x="12.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="203.5" y="299.0" />
+  <SelectedNodes>
+    <node>java.nio.channels.spi.AbstractInterruptibleChannel</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

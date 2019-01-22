@@ -7,13 +7,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="netty-action" />
+        <module name="netty-designmode" />
         <module name="netty-study" />
+        <module name="netty-user-guide" />
+        <module name="netty-userguide" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="netty-action" target="1.5" />
+      <module name="netty-action" target="1.8" />
+      <module name="netty-designmode" target="1.5" />
       <module name="netty-parent" target="1.5" />
-      <module name="netty-study" target="1.5" />
+      <module name="netty-study" target="1.8" />
+      <module name="netty-user-guide" target="1.5" />
+      <module name="netty-userguide" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
