@@ -2,42 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06e05235-c86f-4be4-b6f1-06c1f8cc7a72" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/ReadEventHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/WriteEventHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/netty-designmode/src/test/java/Example.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/netty-designmode/src/test/java/com/distributed/test/SnowflakeIdWorker.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/netty-designmode/netty-designmode.iml" afterPath="$PROJECT_DIR$/netty-designmode/netty-designmode.iml" />
-      <change beforePath="$PROJECT_DIR$/netty-designmode/pom.xml" afterPath="$PROJECT_DIR$/netty-designmode/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Acceptor.java" afterPath="$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Acceptor.java" />
-      <change beforePath="$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Dispatcher.java" afterPath="$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Dispatcher.java" />
       <change beforePath="$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Selector.java" afterPath="$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Selector.java" />
-      <change beforePath="$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Server.java" afterPath="$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Server.java" />
-      <change beforePath="$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/study.txt" afterPath="$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/study.txt" />
-      <change beforePath="$PROJECT_DIR$/netty-study/src/main/java/com/netty/demo/EchoClient.java" afterPath="$PROJECT_DIR$/netty-study/src/main/java/com/netty/demo/test/EchoClient.java" />
-      <change beforePath="$PROJECT_DIR$/netty-study/src/main/java/com/netty/demo/EchoClientHandler.java" afterPath="$PROJECT_DIR$/netty-study/src/main/java/com/netty/demo/test/EchoClientHandler.java" />
-      <change beforePath="$PROJECT_DIR$/netty-study/src/main/java/com/netty/demo/EchoServer.java" afterPath="$PROJECT_DIR$/netty-study/src/main/java/com/netty/demo/test/EchoServer.java" />
-      <change beforePath="$PROJECT_DIR$/netty-study/src/main/java/com/netty/demo/EchoServerHandler.java" afterPath="$PROJECT_DIR$/netty-study/src/main/java/com/netty/demo/test/EchoServerHandler.java" />
-      <change beforePath="$PROJECT_DIR$/netty-study/src/main/java/com/netty/demo/NioServerSocketChannel.uml" afterPath="$PROJECT_DIR$/netty-study/src/main/java/com/netty/demo/test/NioServerSocketChannel.uml" />
-      <change beforePath="$PROJECT_DIR$/netty-study/src/test/java/com/netty/demo/EchoClient.java" afterPath="$PROJECT_DIR$/netty-study/src/test/java/com/netty/demo/test/EchoClient.java" />
-      <change beforePath="$PROJECT_DIR$/netty-study/src/test/java/com/netty/demo/EchoClientHandler.java" afterPath="$PROJECT_DIR$/netty-study/src/test/java/com/netty/demo/test/EchoClientHandler.java" />
-      <change beforePath="$PROJECT_DIR$/netty-study/src/test/java/com/netty/demo/EchoServerHandler.java" afterPath="$PROJECT_DIR$/netty-study/src/test/java/com/netty/demo/test/EchoServerHandler.java" />
-      <change beforePath="$PROJECT_DIR$/netty-study/src/test/java/com/netty/demo/EchoServerTest.java" afterPath="$PROJECT_DIR$/netty-study/src/test/java/com/netty/demo/test/EchoServerTest.java" />
-      <change beforePath="$PROJECT_DIR$/netty-study/src/test/java/com/netty/demo/Example.java" afterPath="$PROJECT_DIR$/netty-study/src/test/java/com/netty/demo/test/Example.java" />
-      <change beforePath="$PROJECT_DIR$/netty-study/target/classes/com/netty/demo/EchoClient$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/netty-study/target/classes/com/netty/demo/EchoClient.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/netty-study/target/classes/com/netty/demo/EchoClientHandler.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/netty-study/target/classes/com/netty/demo/EchoServer$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/netty-study/target/classes/com/netty/demo/EchoServer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/netty-study/target/classes/com/netty/demo/EchoServerHandler.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/netty-userguide/src/main/java/com/netty/demo/DiscardServer.java" afterPath="$PROJECT_DIR$/netty-userguide/src/main/java/com/netty/demo/test/DiscardServer.java" />
-      <change beforePath="$PROJECT_DIR$/netty-userguide/src/main/java/com/netty/demo/DiscardServerHandler.java" afterPath="$PROJECT_DIR$/netty-userguide/src/main/java/com/netty/demo/test/DiscardServerHandler.java" />
-      <change beforePath="$PROJECT_DIR$/netty-userguide/src/main/java/com/netty/demo/TimeClient.java" afterPath="$PROJECT_DIR$/netty-userguide/src/main/java/com/netty/demo/test/TimeClient.java" />
-      <change beforePath="$PROJECT_DIR$/netty-userguide/src/main/java/com/netty/demo/TimeClientHandler.java" afterPath="$PROJECT_DIR$/netty-userguide/src/main/java/com/netty/demo/test/TimeClientHandler.java" />
-      <change beforePath="$PROJECT_DIR$/netty-userguide/src/main/java/com/netty/demo/TimeDecoder.java" afterPath="$PROJECT_DIR$/netty-userguide/src/main/java/com/netty/demo/test/TimeDecoder.java" />
-      <change beforePath="$PROJECT_DIR$/netty-userguide/src/main/java/com/netty/demo/TimeEncoder.java" afterPath="$PROJECT_DIR$/netty-userguide/src/main/java/com/netty/demo/test/TimeEncoder.java" />
-      <change beforePath="$PROJECT_DIR$/netty-userguide/src/main/java/com/netty/demo/TimeServerHandler.java" afterPath="$PROJECT_DIR$/netty-userguide/src/main/java/com/netty/demo/test/TimeServerHandler.java" />
-      <change beforePath="$PROJECT_DIR$/netty-userguide/src/main/java/com/netty/demo/UnixTime.java" afterPath="$PROJECT_DIR$/netty-userguide/src/main/java/com/netty/demo/test/UnixTime.java" />
+      <change beforePath="$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Server.java" afterPath="$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/ServerSocketChannel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/netty-study/target/" />
@@ -54,31 +21,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Selector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Selector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="52" column="10" lean-forward="false" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
-              <folding>
-                <element signature="e#485#492#0" expanded="true" />
-                <element signature="e#1232#1239#0" expanded="true" />
-                <element signature="e#1354#1355#0" expanded="true" />
-                <element signature="e#1389#1390#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Server.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AcceptEventHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/AcceptEventHandler.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -112,21 +54,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="study.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/study.txt">
+      <file leaf-file-name="Selector.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Selector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="38" lean-forward="true" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
-              <folding />
+            <state relative-caret-position="370">
+              <caret line="45" column="35" lean-forward="false" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="35" />
+              <folding>
+                <element signature="e#485#492#0" expanded="true" />
+                <element signature="e#1399#1400#0" expanded="true" />
+                <element signature="e#1434#1435#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InputSource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/InputSource.java">
+      <file leaf-file-name="Dispatcher.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Dispatcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="489">
+              <caret line="46" column="74" lean-forward="true" selection-start-line="46" selection-start-column="74" selection-end-line="46" selection-end-column="74" />
+              <folding>
+                <element signature="e#957#958#0" expanded="true" />
+                <element signature="e#983#984#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServerSocketChannel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/ServerSocketChannel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -135,12 +94,32 @@
       <file leaf-file-name="Acceptor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Acceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
+            <state relative-caret-position="666">
               <caret line="56" column="41" lean-forward="false" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="41" />
               <folding>
                 <element signature="e#804#1616#0" expanded="true" />
                 <element signature="e#1615#1616#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/EventHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/EventType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -151,19 +130,6 @@
             <state relative-caret-position="119">
               <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dispatcher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Dispatcher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="46" column="74" lean-forward="true" selection-start-line="46" selection-start-column="74" selection-end-line="46" selection-end-column="74" />
-              <folding>
-                <element signature="e#957#958#0" expanded="true" />
-                <element signature="e#983#984#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -253,12 +219,13 @@
         <option value="$PROJECT_DIR$/netty-designmode/src/test/java/Example.java" />
         <option value="$PROJECT_DIR$/netty-designmode/src/test/java/com/distributed/test/SnowflakeIdWorker.java" />
         <option value="$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Dispatcher.java" />
-        <option value="$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Selector.java" />
         <option value="$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Acceptor.java" />
         <option value="$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/ReadEventHandler.java" />
         <option value="$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/WriteEventHandler.java" />
         <option value="$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Server.java" />
         <option value="$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/study.txt" />
+        <option value="$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/ServerSocketChannel.java" />
+        <option value="$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Selector.java" />
       </list>
     </option>
   </component>
@@ -703,7 +670,7 @@
       <workItem from="1547605854962" duration="35348000" />
       <workItem from="1548037372171" duration="55124000" />
       <workItem from="1548728307967" duration="276000" />
-      <workItem from="1548729588351" duration="23009000" />
+      <workItem from="1548729588351" duration="23275000" />
     </task>
     <task id="LOCAL-00001" summary="完善">
       <created>1547462079165</created>
@@ -749,10 +716,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124625000" />
+    <option name="totallyTimeSpent" value="124891000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -767,7 +735,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1673774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1673774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1243,14 +1211,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/EventHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_71/jre/lib/rt.jar!/sun/nio/ch/SelectionKeyImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51">
@@ -1307,6 +1267,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/SelectionKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/InputSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/study.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/EventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/ReadEventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/WriteEventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/EventType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1323,65 +1331,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/SelectionKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Selector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="52" column="10" lean-forward="false" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
-          <folding>
-            <element signature="e#485#492#0" expanded="true" />
-            <element signature="e#1232#1239#0" expanded="true" />
-            <element signature="e#1354#1355#0" expanded="true" />
-            <element signature="e#1389#1390#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/InputSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/ReadEventHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Acceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="56" column="41" lean-forward="false" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="41" />
-          <folding>
-            <element signature="e#804#1616#0" expanded="true" />
-            <element signature="e#1615#1616#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Dispatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="46" column="74" lean-forward="true" selection-start-line="46" selection-start-column="74" selection-end-line="46" selection-end-column="74" />
-          <folding>
-            <element signature="e#957#958#0" expanded="true" />
-            <element signature="e#983#984#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/AcceptEventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1393,7 +1342,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Server.java">
+    <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Acceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="56" column="41" lean-forward="false" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="41" />
+          <folding>
+            <element signature="e#804#1616#0" expanded="true" />
+            <element signature="e#1615#1616#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Dispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="46" column="74" lean-forward="true" selection-start-line="46" selection-start-column="74" selection-end-line="46" selection-end-column="74" />
+          <folding>
+            <element signature="e#957#958#0" expanded="true" />
+            <element signature="e#983#984#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/ServerSocketChannel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
@@ -1401,19 +1372,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/WriteEventHandler.java">
+    <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/Selector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-designmode/src/main/java/com/reactor/demo/study.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="38" lean-forward="true" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
-          <folding />
+        <state relative-caret-position="370">
+          <caret line="45" column="35" lean-forward="false" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="35" />
+          <folding>
+            <element signature="e#485#492#0" expanded="true" />
+            <element signature="e#1399#1400#0" expanded="true" />
+            <element signature="e#1434#1435#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

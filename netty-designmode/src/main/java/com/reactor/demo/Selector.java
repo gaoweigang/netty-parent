@@ -40,9 +40,10 @@ public class Selector {
             }
         }
         //TODO 例子中只是简单的将event列表全部返回，可以在此处增加业务逻辑，选出符合条件的event进行返回
-        Set<Event> events = new HashSet<Event>();
-        selectedKeys.addAll(events);
-        return events.size();
+        //Set<Event> events = new HashSet<Event>();
+        //selectedKeys.addAll(events);
+        //return events.size();
+        return selectionKeys().size();
     }
 
     public Set<Event> selectionKeys(){

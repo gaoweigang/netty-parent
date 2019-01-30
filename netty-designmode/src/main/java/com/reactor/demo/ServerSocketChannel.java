@@ -1,11 +1,11 @@
 package com.reactor.demo;
 
-public class Server {
+public class ServerSocketChannel {
     Selector selector = new Selector();
     Dispatcher dispatcher = new Dispatcher(selector);
     Acceptor acceptor;
 
-    Server(int port) {
+    ServerSocketChannel(int port) {
         acceptor = new Acceptor(selector, port);
     }
 
