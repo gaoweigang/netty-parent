@@ -2,7 +2,7 @@ package com.reactor.demo;
 
 public class Server {
     Selector selector = new Selector();
-    Dispatcher eventLooper = new Dispatcher(selector);
+    Dispatcher dispatcher = new Dispatcher(selector);
     Acceptor acceptor;
 
     Server(int port) {
@@ -10,8 +10,10 @@ public class Server {
     }
 
     public void start() {
-        eventLooper.registEventHandler(EventType.ACCEPT, new AcceptEventHandler(selector));
-        new Thread(acceptor, "Acceptor-" + acceptor.getPort()).start();
-        eventLooper.handleEvents();
+        dispatcher.registEventHandler(EventType.ACCEPT, new AcceptEventHandler(selector));
+        dispatcher.registEventHandler(EventType.READ, new ReadEventHandler(selector));
+        dispatcher.registEventHandler(EventType.WRITE, new WriteEventHandler(selector));
+        acceptor.accept();//接受请求
+        dispatcher.handleEvents();
     }
 }

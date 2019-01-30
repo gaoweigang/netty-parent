@@ -1,7 +1,9 @@
 package com.reactor.demo;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
@@ -13,20 +15,21 @@ import java.util.concurrent.LinkedBlockingQueue;
  */
 public class Selector {
     //定义一个链表阻塞queue实现缓冲队列，用于保证线程安全
-    private BlockingQueue<Event> eventQueue = new LinkedBlockingQueue<Event>();
+    private Set<Event> selectedKeys = new HashSet<Event>();
     //定义一个object用于synchronize方法块上锁
     private Object lock = new Object();
 
-    List<Event> select() {
+    int select() {
         return select(0);
     }
 
-    //
-    List<Event> select(long timeout) {
+
+    //Synchronous Event Demultiplexer等待事件发生，调用方在调用它的时候会被阻塞，一直阻塞到同步事件分离器上有事件产生为止
+    public int select(long timeout) {
         if (timeout > 0) {
-            if (eventQueue.isEmpty()) {
+            if (selectedKeys.isEmpty()) {
                 synchronized (lock) {
-                    if (eventQueue.isEmpty()) {
+                    if (selectedKeys.isEmpty()) {
                         try {
                             lock.wait(timeout);
                         } catch (InterruptedException e) {
@@ -37,14 +40,20 @@ public class Selector {
             }
         }
         //TODO 例子中只是简单的将event列表全部返回，可以在此处增加业务逻辑，选出符合条件的event进行返回
-        List<Event> events = new ArrayList<Event>();
-        eventQueue.drainTo(events);
-        return events;
+        Set<Event> events = new HashSet<Event>();
+        selectedKeys.addAll(events);
+        return events.size();
     }
 
+    public Set<Event> selectionKeys(){
+        return selectedKeys;
+    }
+
+
+    //添加事件
     public void addEvent(Event e) {
         //将event事件加入队列
-        boolean success = eventQueue.offer(e);
+        boolean success = selectedKeys.add(e);
         if (success) {
             synchronized (lock) {
                 //如果有新增事件则对lock对象解锁

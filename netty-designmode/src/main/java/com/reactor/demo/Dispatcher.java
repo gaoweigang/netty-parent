@@ -2,6 +2,7 @@ package com.reactor.demo;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -34,12 +35,15 @@ public class Dispatcher {
         dispatch();
     }
 
-    //此例只是实现了简单的事件分发给相应的处理器处理，例子中的处理器都是同步，在reactor模式的典型实现NIO中都是在handle异步处理，来保证非阻塞
+    /**
+     * Initiation Dispatcher：用于管理EventHandler、分发event。通过Synchronous Event Demultiplexer来等待事件的发生，一旦事件发生，Initiation Dispatcher首先会分离出每一个事件，
+     * 然后调用事件处理器，最后调用相关的回调方法来处理这些事件
+     */
     private void dispatch() {
         while (true) {
-            List<Event> events = selector.select();
-
-            for (Event event : events) {
+            selector.select();
+            Set<Event> selectionKeys = selector.selectionKeys();
+            for (Event event : selectionKeys) {
                 EventHandler eventHandler = eventHandlerMap.get(event.getType());
                 eventHandler.handle(event);
             }

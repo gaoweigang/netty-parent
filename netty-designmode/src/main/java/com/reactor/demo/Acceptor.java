@@ -9,7 +9,7 @@ import java.util.concurrent.LinkedBlockingQueue;
  * @Created Date: 13:36 17/10/12.
  * @Modify by:
  */
-public class Acceptor implements Runnable{
+public class Acceptor{
     private int port; // server socket port
     private Selector selector;
 
@@ -30,26 +30,33 @@ public class Acceptor implements Runnable{
         return this.port;
     }
 
-    public void run() {
-        while (true) {
+    public void accept(){
+        new Thread(new Runnable(){
+            public void run() {
+                while (true) {
 
-            InputSource source = null;
-            try {
-                // 相当于 serversocket.accept()，接收输入请求，该例从请求队列中获取输入请求
-                source = sourceQueue.take();
-            } catch (InterruptedException e) {
-                // ignore it;
+                    InputSource source = null;
+                    try {
+                        // 相当于 serversocket.accept()，接收输入请求，该例从请求队列中获取输入请求
+                        source = sourceQueue.take();
+                    } catch (InterruptedException e) {
+                        // ignore it;
+                    }
+
+                    //接收到InputSource后将接收到event设置type为ACCEPT，并将source赋值给event
+                    if (source != null) {
+                        Event acceptEvent = new Event();
+                        acceptEvent.setSource(source);
+                        acceptEvent.setType(EventType.ACCEPT);
+
+                        selector.addEvent(acceptEvent);
+                    }
+
+                }
             }
+        }, "Acceptor-" + this.port).start();
 
-            //接收到InputSource后将接收到event设置type为ACCEPT，并将source赋值给event
-            if (source != null) {
-                Event acceptEvent = new Event();
-                acceptEvent.setSource(source);
-                acceptEvent.setType(EventType.ACCEPT);
-
-                selector.addEvent(acceptEvent);
-            }
-
-        }
     }
+
+
 }
