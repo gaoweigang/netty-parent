@@ -1,4 +1,4 @@
-package com.reactor.demo;
+package com.reactor.singlethread.demo;
 
 public class ServerSocketChannel {
     Selector selector = new Selector();

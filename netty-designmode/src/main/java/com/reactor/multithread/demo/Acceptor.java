@@ -1,4 +1,4 @@
-package com.reactor.demo;
+package com.reactor.multithread.demo;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;

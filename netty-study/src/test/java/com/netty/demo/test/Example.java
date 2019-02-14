@@ -2,6 +2,7 @@ package com.netty.demo.test;
 
 import org.junit.Test;
 
+import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
 public class Example {
@@ -46,6 +47,16 @@ public class Example {
         System.out.println(nanoTime);
     }
 
+
+    @Test
+    public void testFive(){
+        Integer[] arr = new Integer[10];
+        arr[0] = 2;
+        arr[1] = 3;
+        Arrays.fill(arr, 0, 2, null);
+        System.out.println(arr[0]);
+        System.out.println(arr[1]);
+    }
 
 
 

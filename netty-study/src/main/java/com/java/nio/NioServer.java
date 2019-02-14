@@ -39,7 +39,6 @@ public class NioServer {
 
     /**
      * 采用轮询的方式监听selector上是否有需要处理的事件，如果有，则进行处理
-     *
      */
     public void listen() throws Exception{
         System.out.println("服务端启动成功！");
