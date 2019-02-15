@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>io.netty.channel.DefaultChannelPipeline.HeadContext</OriginalElement>
+  <nodes>
+    <node x="577.75" y="81.0">io.netty.channel.ChannelHandlerContext</node>
+    <node x="377.78030303030306" y="0.0">io.netty.util.AttributeMap</node>
+    <node x="211.0" y="162.0">io.netty.channel.ChannelOutboundHandler</node>
+    <node x="325.53030303030306" y="81.0">io.netty.util.DefaultAttributeMap</node>
+    <node x="0.0" y="162.0">io.netty.channel.ChannelInboundHandler</node>
+    <node x="280.03030303030306" y="243.0">io.netty.channel.DefaultChannelPipeline.HeadContext</node>
+    <node x="750.405303030303" y="0.0">io.netty.channel.ChannelOutboundInvoker</node>
+    <node x="518.905303030303" y="162.0">io.netty.channel.AbstractChannelHandlerContext</node>
+    <node x="111.73106060606062" y="81.0">io.netty.channel.ChannelHandler</node>
+    <node x="541.405303030303" y="0.0">io.netty.channel.ChannelInboundInvoker</node>
+    <node x="783.75" y="81.0">io.netty.util.ResourceLeakHint</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="io.netty.channel.ChannelOutboundHandler" target="io.netty.channel.ChannelHandler">
+      <point x="0.0" y="-15.5" />
+      <point x="311.5" y="137.0" />
+      <point x="218.23106060606062" y="137.0" />
+      <point x="35.5" y="15.5" />
+    </edge>
+    <edge source="io.netty.channel.AbstractChannelHandlerContext" target="io.netty.channel.ChannelHandlerContext">
+      <point x="0.0" y="-15.5" />
+      <point x="635.905303030303" y="137.0" />
+      <point x="670.75" y="137.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="io.netty.channel.AbstractChannelHandlerContext" target="io.netty.util.ResourceLeakHint">
+      <point x="78.0" y="-15.5" />
+      <point x="713.905303030303" y="137.0" />
+      <point x="860.75" y="137.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="io.netty.channel.DefaultChannelPipeline.HeadContext" target="io.netty.channel.ChannelInboundHandler">
+      <point x="-41.66666666666663" y="-15.5" />
+      <point x="300.86363636363643" y="218.0" />
+      <point x="95.5" y="218.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="io.netty.channel.DefaultChannelPipeline.HeadContext" target="io.netty.channel.AbstractChannelHandlerContext">
+      <point x="41.666666666666686" y="-15.5" />
+      <point x="384.19696969696975" y="218.0" />
+      <point x="635.905303030303" y="218.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="io.netty.channel.ChannelHandlerContext" target="io.netty.channel.ChannelOutboundInvoker">
+      <point x="62.0" y="-15.5" />
+      <point x="732.75" y="56.0" />
+      <point x="849.905303030303" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="io.netty.channel.ChannelHandlerContext" target="io.netty.util.AttributeMap">
+      <point x="-62.0" y="-15.5" />
+      <point x="608.75" y="56.0" />
+      <point x="473.03030303030306" y="56.0" />
+      <point x="31.75" y="15.5" />
+    </edge>
+    <edge source="io.netty.util.DefaultAttributeMap" target="io.netty.util.AttributeMap">
+      <point x="0.0" y="-15.5" />
+      <point x="-31.75" y="15.5" />
+    </edge>
+    <edge source="io.netty.channel.ChannelInboundHandler" target="io.netty.channel.ChannelHandler">
+      <point x="0.0" y="-15.5" />
+      <point x="95.5" y="137.0" />
+      <point x="147.23106060606062" y="137.0" />
+      <point x="-35.5" y="15.5" />
+    </edge>
+    <edge source="io.netty.channel.ChannelHandlerContext" target="io.netty.channel.ChannelInboundInvoker">
+      <point x="0.0" y="-15.5" />
+      <point x="670.75" y="56.0" />
+      <point x="635.905303030303" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="io.netty.channel.DefaultChannelPipeline.HeadContext" target="io.netty.channel.ChannelOutboundHandler">
+      <point x="0.0" y="-15.5" />
+      <point x="342.53030303030306" y="218.0" />
+      <point x="311.5" y="218.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="io.netty.channel.AbstractChannelHandlerContext" target="io.netty.util.DefaultAttributeMap">
+      <point x="-78.0" y="-15.5" />
+      <point x="557.905303030303" y="137.0" />
+      <point x="409.53030303030306" y="137.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="475.0" y="137.0" />
+  <SelectedNodes>
+    <node>io.netty.channel.DefaultChannelPipeline.HeadContext</node>
+    <node>io.netty.util.ResourceLeakHint</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
