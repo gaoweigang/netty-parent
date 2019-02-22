@@ -1,4 +1,4 @@
-package com.java.nio;
+package com.java.nio.test;
 
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
@@ -12,7 +12,7 @@ import java.util.Iterator;
  * NIO服务端
  *
  */
-public class NioServer {
+public class NioServerTest {
 
     //通道管理器,监听连接请求，数据是否准备好
     private Selector selector;
@@ -27,11 +27,8 @@ public class NioServer {
         ServerSocketChannel serverChannel = ServerSocketChannel.open();
         //设置通道为非阻塞
         serverChannel.configureBlocking(false);
-        System.out.println("before  "+serverChannel.socket().isBound());
         //将该通道对应的ServerSocket绑定到port端口
         serverChannel.socket().bind(new InetSocketAddress(port));
-        System.out.println("after  "+serverChannel.socket().isBound());
-
         //获得一个通道管理器
         this.selector = Selector.open();
         //将通道管理器和该通道绑定，并为该通道注册SelectionKey.OP_ACCEPT事件，注册事件后，
@@ -47,8 +44,10 @@ public class NioServer {
         System.out.println("服务端启动成功！");
         //轮询访问selector
         while(true){
+            System.out.println("select start");
             //当注册的事件到达时，方法返回；否则，该方法会一直阻塞
             selector.select();//selector会监听和它绑定的通道Channel里面发生的特定事件
+            System.out.println("select end");
             Iterator<SelectionKey> ite = this.selector.selectedKeys().iterator();
             while(ite.hasNext()){
                 SelectionKey key = (SelectionKey) ite.next();
@@ -105,12 +104,29 @@ public class NioServer {
 
     }
 
+    public void wakeup(){
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(5000);//5秒之后使尚未返回的第一个选择操作立即返回。
+                    selector.wakeup();
+                }catch (Exception e){
+
+                }
+            }
+        }).start();
+        System.out.println("线程已启动");
+    }
+
+
     /**
      * 启动非服务端测试
      */
     public static void main(String[] args) throws Exception{
-        NioServer server = new NioServer();
+        NioServerTest server = new NioServerTest();
         server.initServer(8000);
+        server.wakeup();
         server.listen();
     }
 

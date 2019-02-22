@@ -1,4 +1,4 @@
-package com.netty.test;
+package com.netty.promise.test;
 
 /**
  * https://www.jianshu.com/p/8000490c9dda

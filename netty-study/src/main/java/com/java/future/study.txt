@@ -1,0 +1,5 @@
+Future接口和实现Future接口的FutureTask类，代表异步计算的结果。
+
+FutureTask简介
+FutureTask除了实现Future接口外，还实现了Runnable接口。因此,FutureTask可以交给Executor执行，也可以由调用线程直接执行(FutureTask.run())。根据FutureTask()方法被执行
+

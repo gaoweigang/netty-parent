@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class Example {
 
@@ -56,6 +57,14 @@ public class Example {
         Arrays.fill(arr, 0, 2, null);
         System.out.println(arr[0]);
         System.out.println(arr[1]);
+    }
+
+    private final AtomicBoolean wakenup = new AtomicBoolean();
+
+    @Test
+    public void testSix(){
+
+        System.out.println(wakenup);
     }
 
 

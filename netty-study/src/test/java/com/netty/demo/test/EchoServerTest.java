@@ -44,9 +44,10 @@ public class EchoServerTest {
             System.out.println(EchoServerTest.class.getName()+" started and listen on "+ f.channel().localAddress());
 
             f.channel().closeFuture().sync();//阻塞
+            System.out.println("end .....");
         } finally {
             bossGroup.shutdownGracefully().sync();
-            bossGroup.shutdownGracefully().sync();
+            workerGroup.shutdownGracefully().sync();
         }
     }
 }
