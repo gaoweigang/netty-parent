@@ -23,8 +23,9 @@ public class NioServer {
      * @param port 绑定的端口号
      */
     public void initServer(int port) throws Exception{
-        //获得一个ServerSocket通道
+        //获得一个ServerSocket通道/ 打开一个通道
         ServerSocketChannel serverChannel = ServerSocketChannel.open();
+        System.out.println("serverChannel isOpen "+serverChannel.isOpen());//判断该通道是否处于打开状态
         //设置通道为非阻塞
         serverChannel.configureBlocking(false);
         System.out.println("before  "+serverChannel.socket().isBound());
@@ -37,6 +38,7 @@ public class NioServer {
         //将通道管理器和该通道绑定，并为该通道注册SelectionKey.OP_ACCEPT事件，注册事件后，
         //当该事件达到时，selector.select()会返回，如果该事件没到达selector.select()会一直阻塞。
         serverChannel.register(selector, SelectionKey.OP_ACCEPT);//selector监听和它绑定的通道serverChannel的OP_ACCEPT事件
+        System.out.println("serverChannel isOpen -> "+serverChannel.isOpen());
 
     }
 
@@ -51,7 +53,9 @@ public class NioServer {
             selector.select();//selector会监听和它绑定的通道Channel里面发生的特定事件
             Iterator<SelectionKey> ite = this.selector.selectedKeys().iterator();
             while(ite.hasNext()){
+                System.out.println("遍历selectedKeys start..");
                 SelectionKey key = (SelectionKey) ite.next();
+                System.out.println("key  "+ key);
                 //删除已选择的key,以防重复处理
                 ite.remove();
                 handler(key);
@@ -70,6 +74,8 @@ public class NioServer {
         }else if(key.isReadable()){//获得了可读事件
             handlerRead(key);
 
+        }else if(key.isWritable()){//获得了可写事件
+
         }
     }
 
@@ -77,11 +83,13 @@ public class NioServer {
         ServerSocketChannel server = (ServerSocketChannel)key.channel();
         //获得和客户端连接的通道
         SocketChannel channel = server.accept();
+        System.out.println("isOpen -> "+channel.isOpen());
+        System.out.println("isConnected -> "+ channel.isConnected());
         channel.configureBlocking(false);
         //在这里可以给客户端发送消息哦
         System.out.println("新的客户端连接");
         //在和客户端连接成功之后，为了可以接收到客户端的信息，需要给通道设置读的权限
-        channel.register(this.selector, SelectionKey.OP_READ);
+        channel.register(this.selector, SelectionKey.OP_READ | SelectionKey.OP_WRITE);
 
     }
 
@@ -91,6 +99,7 @@ public class NioServer {
      * @throws Exception
      */
     public void handlerRead(SelectionKey key) throws Exception{
+        System.out.println(key);
         //服务器可读取消息：得到事件发生的Socket通道
         SocketChannel channel = (SocketChannel) key.channel();
         //创建读取的缓冲区
@@ -98,12 +107,19 @@ public class NioServer {
         channel.read(buffer);
         byte[] data = buffer.array();
         String msg = new String(data).trim();
-        System.out.println("服务端收到信息："+msg);
+        System.out.println(key+"服务端收到信息："+msg);
 
         ByteBuffer outBuffer = ByteBuffer.wrap(msg.getBytes());
         channel.write(outBuffer);//将消息回送给客户端
 
     }
+
+    public void handlerWrite(SelectionKey key) throws Exception{
+        System.out.println(key);
+
+    }
+
+
 
     /**
      * 启动非服务端测试

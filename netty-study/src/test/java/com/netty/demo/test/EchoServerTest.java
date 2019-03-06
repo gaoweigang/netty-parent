@@ -23,7 +23,8 @@ public class EchoServerTest {
     }
     public void start() throws Exception{
         NioEventLoopGroup bossGroup = new NioEventLoopGroup(2);
-        NioEventLoopGroup workerGroup = new NioEventLoopGroup(3);//
+        //使用指定的线程数和ThreadFactory以及SelectorProvider创建一个新实例，SelectorProvider是由SelectorProvider#provider()创建。
+        NioEventLoopGroup workerGroup = new NioEventLoopGroup(1);
 
         try {
             ServerBootstrap b = new ServerBootstrap();

@@ -1,10 +1,14 @@
 package com.netty.demo.test;
 
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicLong;
 
 public class Example {
 
@@ -65,6 +69,49 @@ public class Example {
     public void testSix(){
 
         System.out.println(wakenup);
+    }
+
+    @Test
+    public void testSeven() {
+        long l = System.nanoTime();
+        Date date = new Date(l / 1000000);
+        System.out.println(l);
+        System.out.println(date);
+        System.out.println(new Date());
+    }
+
+    @Test
+    public void testEight(){
+        long l = System.currentTimeMillis();
+        Date date = new Date(l);
+        System.out.println(l);
+        System.out.println(date);
+        System.out.println(new Date());
+    }
+
+    @Test
+    public void testNine(){
+        for(int i = 0; i < 9; i++){
+            long m = System.currentTimeMillis();
+            long n = System.nanoTime();
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException ignored) {
+            }
+            long m1 = System.currentTimeMillis();
+            long n1 = System.nanoTime();
+            long m0 = m1 - m;
+            long n0 = n1 - n;
+
+            System.out.println(i + " -- " + (n0 / m0));
+        };
+    }
+
+    @Test
+    public void test1(){
+        AtomicLong nextTaskId = new AtomicLong();
+        System.out.println(nextTaskId.getAndIncrement());
+
     }
 
 
