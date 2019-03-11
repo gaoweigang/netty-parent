@@ -13,10 +13,9 @@ public class ReadEventHandler extends EventHandler {
         this.selector = selector;
     }
 
-    @Override
-    public void handle(Event event) {
+    public void run() {
         //处理Accept的event事件
-        if (event.getType() == EventType.READ) {
+        if (this.getEvent().getType() == EventType.READ) {
 
             //TODO 处理READ状态的事件
             System.out.println("处理读状态的事件");

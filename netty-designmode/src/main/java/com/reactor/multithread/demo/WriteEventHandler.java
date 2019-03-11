@@ -13,14 +13,15 @@ public class WriteEventHandler extends EventHandler {
         this.selector = selector;
     }
 
-    @Override
-    public void handle(Event event) {
+    public void run() {
         //处理Accept的event事件
-        if (event.getType() == EventType.WRITE) {
+        if (this.getEvent().getType() == EventType.WRITE) {
 
             //TODO 处理WRITE状态的事件
 
             System.out.println();
         }
     }
+
+
 }
